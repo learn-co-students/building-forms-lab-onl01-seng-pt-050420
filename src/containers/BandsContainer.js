@@ -7,7 +7,7 @@ class BandsContainer extends Component {
   renderBands = state => {
     return(
       state.map((band, index) => {
-        return <li>{band.text}</li>
+        return <li key={index}>{band.name}</li>
       })
     )
   }
