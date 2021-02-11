@@ -120,7 +120,7 @@ describe('Bands Container', () => {
 
     expect(store.getState().bands.length, "There are " + store.getState().bands.length + " bands in the store, but " + wrapper.find('li').length + "li elements").to.equal(wrapper.find('li').length)
 
-  });
+  }); 
 
   it('renders each li with the correct name', () => {
       const store = createStore(manageBand)
