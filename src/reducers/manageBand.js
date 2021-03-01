@@ -1,11 +1,9 @@
-export default function manageBand(state = {
-  bands: [],
-}, action) {
+export default function manageBand(state = [] , action) {
   switch(action.type){
         case "ADD_BAND":     
         console.log(state.bands)
       return {     
-        bands: state.bands.concat(action.band),
+        bands: state.concat(action.band),
       }
   default:
   return state;
