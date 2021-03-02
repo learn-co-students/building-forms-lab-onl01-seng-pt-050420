@@ -1,9 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Band extends Component { 
-    render() {  
-        return (
-            <li>{this.props.band.name}</li>
-        )
-    }
-} 
+const Band = props => <li>{props.band.name}</li>
+
+export default Band
